@@ -392,20 +392,7 @@ header .nav .nav-items a:hover:before {
 
 .trial {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 100%;
-  margin: 190px;
-}
-
-.trial .main-div-trial {
-  text-align: center;
-}
-
-.heading-mark {
-  display: block;
+  
 }
 
 
