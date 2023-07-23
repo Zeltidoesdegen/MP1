@@ -18,7 +18,7 @@ body h1 {
 }
 
 /* Header content start */
-header {
+#head-main {
   z-index: 100;
   position: absolute;
   font-family: Montserrat, sans-serif;
@@ -392,8 +392,91 @@ header .nav .nav-items a:hover:before {
 
 .trial {
   position: relative;
-  
+  width: 100%;
+  height: 100%;
+  background-image: url("img/grey-trees.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
+
+.trial .trial-row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 25px;
+}
+
+.trial .trial-row .trial-column {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 0.3125rem;
+  width: 100%;
+}
+
+header#head-info {
+  text-align: center;
+}
+
+.heading-mark{
+  /* for moving the icon */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+header#head-info p {
+  margin-bottom: 1.5em
+}
+
+
+/* Start of circular grid CSS */
+.circle-grid .circle-grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 25px;
+}
+
+.circle-grid .circle-grid-row .circle-grid-column {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 0.3125rem;
+  width: 100%;
+}
+
+.circle-grid .circle-item {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.circle-grid .circle-item img {
+  vertical-align: middle;
+}
+
+.circle-grid .circle-item h3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0 15px;
+  text-shadow: -1px 1px 2px #000,
+      1px 2px 6px #000,
+      1px -1px 0 #000,
+      -1px -1px 0 #000;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
 
 
 
