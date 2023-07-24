@@ -18,7 +18,7 @@ body h1 {
 }
 
 /* Header content start */
-header#head-main {
+#head-main {
   z-index: 100;
   position: absolute;
   font-family: Montserrat, sans-serif;
@@ -35,7 +35,7 @@ header#head-main {
   transition: 0.5s ease;
 }
 
-header .head-title {
+#head-main .head-title {
   color: #fff;
   font-size: 1.5em;
   font-weight: 700;
@@ -48,11 +48,11 @@ header .head-title {
   /* Good to keep as reference for possible text-shadowing */
 }
 
-header .nav {
+#head-main .nav {
   position: relative;
 }
 
-header .nav .nav-items a {
+#head-main .nav .nav-items a {
   position: relative;
   color: #fff;
   font-weight: 300;
@@ -63,7 +63,7 @@ header .nav .nav-items a {
   transition: 0.3s ease;
 }
 
-header .nav .nav-items a:before {
+#head-main .nav .nav-items a:before {
   content: '';
   position: absolute;
   background-color: #fce38a;
@@ -74,7 +74,7 @@ header .nav .nav-items a:before {
   transition: 0.3s ease;
 }
 
-header .nav .nav-items a:hover:before {
+#head-main .nav .nav-items a:hover:before {
   width: 100%;
 }
 
@@ -487,7 +487,7 @@ header#head-info p {
 }  
 
 
-
+/* CSS for Modals */
 .modal-title {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
@@ -519,7 +519,7 @@ header#head-info p {
 
 /* Media Queries */
 @media (max-width: 375px) {
-   header#head-main {
+  header#head-main {
     padding: 12px 20px;
   }
   
