@@ -18,7 +18,7 @@ body h1 {
 }
 
 /* Header content start */
-#head-main {
+header#head-main {
   z-index: 100;
   position: absolute;
   font-family: Montserrat, sans-serif;
@@ -313,7 +313,7 @@ header .nav .nav-items a:hover:before {
 }
 
 .about::before {
-  z-index: 3;
+  z-index: 1;
   content: '';
   position: absolute;
   background: rgba(233, 218, 133, 0.3);
@@ -375,18 +375,21 @@ header .nav .nav-items a:hover:before {
 
 /* End of about */
 
-/* .trial::before {
-  z-index: 4;
+.trial::before {
+  z-index: 3;
   display: block;
   content: ' ';
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 380px;
+  top: -470px;
+  top: calc(-470px + 5vw);
   background-image: url("img/intro-bg-trees_large.svg");
   background-repeat: no-repeat;
-  top: 1530px;
-  background-size: 2800px;
-} */
+  background-size: 3200px;
+  background-position: center 100.5%
+  
+}
 
 /* Start of trial */
 
@@ -409,6 +412,7 @@ header .nav .nav-items a:hover:before {
 }
 
 .trial .trial-row .trial-column {
+  z-index: 4;
   position: relative;
   box-sizing: border-box;
   padding: 0 0.3125rem;
@@ -417,6 +421,7 @@ header .nav .nav-items a:hover:before {
 
 header#head-info {
   text-align: center;
+  
 }
 
 .heading-mark{
@@ -441,9 +446,9 @@ header#head-info p {
   margin: 0 auto;
   width: 100%;
   padding: 0 25px;
-}
+} 
 
-.circle-grid .circle-grid-row .circle-grid-column {
+.circle-grid .circle-grid-row .circle-grid-col {
   position: relative;
   box-sizing: border-box;
   padding: 0 0.3125rem;
@@ -455,6 +460,10 @@ header#head-info p {
   position: relative;
   overflow: hidden;
   color: #fff;
+}
+
+.circle-grid .circle-item a {
+  text-align: center;
 }
 
 .circle-grid .circle-item img {
@@ -475,11 +484,19 @@ header#head-info p {
       -1px -1px 0 #000;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
+}  
+
+
+
+.modal-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
 }
 
-
-
-
+.modal-body p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
 
 
 
@@ -502,7 +519,7 @@ header#head-info p {
 
 /* Media Queries */
 @media (max-width: 375px) {
-  header {
+   header#head-main {
     padding: 12px 20px;
   }
   
@@ -539,12 +556,12 @@ header#head-info p {
     justify-content: center;
   }
 
-  header .nav {
+  #head-main .nav {
     /* for pop-up nav-bar button div */
     display: none;
   }
 
-  header .nav.active {
+  #head-main .nav.active {
       /* for pop-up nav-bar div */
       position: fixed;
       width: 375px;
@@ -557,7 +574,7 @@ header#head-info p {
       background: rgba(1, 1, 1, 0.5);
   }
 
-  header .nav .nav-items a {
+  #head-main .nav .nav-items a {
       /* for the text inside the nav-bar */
       font-family: Montserrat, sans-serif;
       font-weight: 300;
@@ -566,14 +583,14 @@ header#head-info p {
       /* font-weight: 600; */
   }
 
-  header .nav .nav-items a::before {
+  #head-main .nav .nav-items a::before {
       /* for underlining of texts in media query for navbar */
       background: #fce38a;
       margin-top: 5px;
       height: 2px;
   }
 
-  header .nav.active .nav-items {
+  #head-main .nav.active .nav-items {
       /* div box for css for the pop-up nav-bar in media query */
       background: linear-gradient(rgba(252, 185, 125, 1), rgba(170, 186, 158, 1));
       width: 600px;
@@ -610,6 +627,11 @@ header#head-info p {
 
   .about .about-content {
     margin-left: 20px;
+  }
+
+  .trial::before {
+    top: -360px;
+    top: calc(-360px + 5vw);
   }
 
 }
