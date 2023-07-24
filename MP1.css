@@ -634,4 +634,7 @@ header#head-info p {
     top: calc(-360px + 5vw);
   }
 
+  .modal-body img {
+    
+  }
 }
