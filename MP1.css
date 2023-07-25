@@ -147,7 +147,7 @@ body h1 {
 
 #home .content-slider .slider .banner .banner-inner-wrapper .line {
   display: block;
-  width: 4em;
+  width: 45em;
   height: 0.1875em;
   margin: 2.5em auto;
   background: #fff;
@@ -162,7 +162,7 @@ body h1 {
   padding: 0.5em 2em;
   text-align: center ;
   font-family: Montserrat, sans-serif;
-  font-size: 0.875em;
+  font-size: 1.8em;
   color: #fff;
   text-transform: uppercase;
   border: 0.1875em solid #fff;
@@ -320,7 +320,7 @@ body h1 {
 
 .about .about-content h1  {
   font-family: Montserrat, sans-serif;
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 700; 
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -343,7 +343,7 @@ body h1 {
 }
 
 .about .about-content span {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 600;
   text-shadow: -1px 1px 2px #000,
         1px 2px 6px #000,
@@ -353,6 +353,7 @@ body h1 {
 
 .about .about-content p {
   font-family: Montserrat, sans-serif;
+  font-size: 1.8em;
   margin-bottom: 65px;
   text-shadow: -1px 1px 2px #000,
         1px 2px 6px #000,
@@ -779,27 +780,29 @@ color: #c0c0c0;
   header#head-main {
     padding: 12px 20px;
   }
+
+  
   
   #home .content-slider .slider .banner .banner-inner-wrapper h2{
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   #home .content-slider .slider .banner .banner-inner-wrapper h1{
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   #home .content-slider nav .controls {
     width: 100%;
-    padding-bottom: 2em;
+    padding-bottom: 2rem;
   }
 
   #home .content-slider nav .controls label {
-    margin: 0 2em;
-    padding-top: 0.5em;
+    margin: 0 2rem;
+    padding-top: 0.5rem;
     /* text-align: center; */
-    margin-top: 1em;
-    height: 3.7em;
-    font-size: 0.75em;
+    margin-top: 1rem;
+    height: 3.7rem;
+    font-size: 0.75rem;
     
   }
 
