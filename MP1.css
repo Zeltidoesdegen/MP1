@@ -37,7 +37,7 @@ body h1 {
 
 #head-main .head-title {
   color: #fff;
-  font-size: 5em;
+  font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -57,7 +57,7 @@ body h1 {
   color: #fff;
   font-weight: 300;
   text-decoration: none;
-  font-size: 2.5em;
+  font-size: 1em;
   /* If removed, might cause some errors since spacing when it comes to web responsiveness */
   margin-left: 30px;
   transition: 0.3s ease;
@@ -125,29 +125,29 @@ body h1 {
 
 #home .content-slider .slider .banner .banner-inner-wrapper {
   height: 100%;
-  padding-top: 8em;
-  background-image: linear-gradient(#fcb97d, #aaba9e);
+  padding-top: 6em;
+  background-image: linear-gradient(rgba(252, 185, 125, 1), rgba(170, 186, 158, 1));
   box-sizing: border-box;
 }
 
 #home .content-slider .slider .banner .banner-inner-wrapper h2 {
-  padding-top: 5em;
+  padding-top: 3em;
   padding-bottom: 0.3em;
   font-family: 'Kaushan Script', cursive;
   font-weight: 400;
-  font-size: 3.5em;
+  font-size: 2.5em;
   text-transform: none;
 }
 
 #home .content-slider .slider .banner .banner-inner-wrapper h1 {
-  font-size: 8em;
+  font-size: 6em;
   line-height: 95%;
   /* to give an effect of closeness without using padding */
 }
 
 #home .content-slider .slider .banner .banner-inner-wrapper .line {
   display: block;
-  width: 45em;
+  width: 4em;
   height: 0.1875em;
   margin: 2.5em auto;
   background: #fff;
@@ -162,7 +162,7 @@ body h1 {
   padding: 0.5em 2em;
   text-align: center ;
   font-family: Montserrat, sans-serif;
-  font-size: 1.8em;
+  font-size: 0.875em;
   color: #fff;
   text-transform: uppercase;
   border: 0.1875em solid #fff;
@@ -195,14 +195,14 @@ body h1 {
   position: relative;
   display: inline-block;
   width: 20%;
-  height: 8em;
+  height: 3.1em;
   overflow: hidden;
   margin: 0 1em;
   padding-top: 1em;
   text-align: left;
   text-transform: uppercase;
   font-family: Montserrat, sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #dfe4dd;
   font-weight: 400;
   cursor: pointer;
@@ -318,9 +318,18 @@ body h1 {
   left: 0;
 }
 
+.about .about-content {
+  z-index: 5;
+  color: #fff;
+  width: 70%;
+  /* for tightening of the content so pictures could be added to right side */
+  margin-top: 50px; 
+  margin-left: 200px;   
+}
+
 .about .about-content h1  {
   font-family: Montserrat, sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 700; 
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -333,27 +342,14 @@ body h1 {
         -1px -1px 0 #000;
 }
 
-.about .about-content {
-  z-index: 5;
-  color: #fff;
-  width: 70%;
-  /* for tightening of the content so pictures could be added to right side */
-  margin-top: 50px; 
-  margin-left: 200px;   
-}
-
-.about .about-content span {
-  font-size: 1.5em;
+.about .about-content h1 span {
+  font-size: 1.2em;
   font-weight: 600;
-  text-shadow: -1px 1px 2px #000,
-        1px 2px 6px #000,
-        1px -1px 0 #000,
-        -1px -1px 0 #000;
+  
 }
 
 .about .about-content p {
   font-family: Montserrat, sans-serif;
-  font-size: 1.8em;
   margin-bottom: 65px;
   text-shadow: -1px 1px 2px #000,
         1px 2px 6px #000,
