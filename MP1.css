@@ -125,8 +125,8 @@ body h1 {
 
 #home .content-slider .slider .banner .banner-inner-wrapper {
   height: 100%;
-  padding-top: 6em;
-  background-image: linear-gradient(rgba(252, 185, 125, 1), rgba(170, 186, 158, 1));
+  padding-top: 8em;
+  background-image: linear-gradient(#fcb97d, #aaba9e);
   box-sizing: border-box;
 }
 
@@ -140,7 +140,7 @@ body h1 {
 }
 
 #home .content-slider .slider .banner .banner-inner-wrapper h1 {
-  font-size: 6em;
+  font-size: 8em;
   line-height: 95%;
   /* to give an effect of closeness without using padding */
 }
@@ -318,15 +318,6 @@ body h1 {
   left: 0;
 }
 
-.about .about-content {
-  z-index: 5;
-  color: #fff;
-  width: 70%;
-  /* for tightening of the content so pictures could be added to right side */
-  margin-top: 50px; 
-  margin-left: 200px;   
-}
-
 .about .about-content h1  {
   font-family: Montserrat, sans-serif;
   font-size: 2.5em;
@@ -342,10 +333,22 @@ body h1 {
         -1px -1px 0 #000;
 }
 
-.about .about-content h1 span {
+.about .about-content {
+  z-index: 5;
+  color: #fff;
+  width: 70%;
+  /* for tightening of the content so pictures could be added to right side */
+  margin-top: 50px; 
+  margin-left: 200px;   
+}
+
+.about .about-content span {
   font-size: 1.2em;
   font-weight: 600;
-  
+  text-shadow: -1px 1px 2px #000,
+        1px 2px 6px #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
 }
 
 .about .about-content p {
@@ -429,8 +432,12 @@ header#head-info {
 }
 
 header#head-info p {
-  margin-bottom: 1.5em
+  margin-bottom: 1.5em;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.3em;
 }
+
+
 
 /* End of trial column */
 
@@ -501,8 +508,254 @@ header#head-info p {
 }
 /* End of CSS for carousel */
 
+/* Lodging Start */
+.lodging {
+  position: relative;
+  background: #7BA098;
+  width: 100%;
+  padding: 100px 0; 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* For making the home content mid from the main div */
+  flex-direction: column;
+}
+
+.lodging::before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  background: rgba(233, 218, 133, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.lodging .lodging-content {
+  z-index: 5;
+  color: #fff;
+  width: 40%;
+  /* for tightening of the content so pictures could be added to right side */
+  margin-top: 50px; 
+  margin-left: 200px;   
+}
+
+.lodging .lodging-content span {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-shadow: -1px 1px 2px #000,
+        1px 2px 6px #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+}
+
+.lodging .lodging-content p {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 65px;
+  text-shadow: -1px 1px 2px #000,
+        1px 2px 6px #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+}
+
+.lodging .lodging-content a {
+  background: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 100;
+  font-size: 1.1em;
+  border-radius: 3px;
+  border: #000 solid 1px;
+}
+
+.lodging .lodging-content a:hover {
+  color: goldenrod;
+  transition: 0.5s;
+}
+
+.lodging img {
+  z-index: 0;
+  position: absolute;
+  /* subject to change, depending on the final design */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Lodging end */
+
 /* ------------------------------------ */
 
+/* Footer */
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+background-image: url(img/footer-bg.jpg);
+position: relative;
+background-size: cover;
+}
+.footer-column {
+border-bottom: 1px solid #757575;
+}
+.single-column i {
+color: #a5cfbb;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+
+}
+.cta-text span {
+color: #c0c0c0;
+font-size: 15px;
+}
+.footer-content {
+position: relative;
+z-index: 2;
+}
+.footer-pattern img {
+position: absolute;
+top: 0;
+left: 0;
+height: 330px;
+background-size: cover;
+background-position: 100% 100%;
+}
+.footer-logo {
+margin-bottom: 30px;
+}
+.footer-logo h1 {
+  font-size: 50px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #a5cfbb;
+}
+.footer-text p {
+margin-bottom: 14px;
+font-size: 14px;
+color: #c0c0c0;
+line-height: 28px;
+}
+.footer-social-media-icon span {
+color: #fff;
+display: block;
+font-size: 20px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 20px;
+}
+.footer-social-media-icon a {
+color: #fff;
+font-size: 16px;
+margin-right: 15px;
+}
+.footer-social-media-icon i {
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+}
+.facebook-bg{
+background: #3B5998;
+}
+.twitter-bg{
+background: #55ACEE;
+}
+.fa-google{
+background: #DD4B39;
+}
+.footer-widget-heading h3 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: #a5cfbb;
+}
+.footer-widget ul li {
+display: inline-block;
+float: left;
+width: 50%;
+margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+color: #a5cfbb;
+}
+.footer-widget ul li a {
+color: #c0c0c0;
+text-transform: capitalize;
+}
+.subscribe-form {
+position: relative;
+overflow: hidden;
+}
+.subscribe-form input {
+width: 100%;
+padding: 14px 28px;
+background: #2E2E2E;
+border: 1px solid #2E2E2E;
+color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #a5cfbb;
+  padding: 13px 20px;
+  border: 1px solid #a5cfbb;
+  top: 0;
+}
+.subscribe-form button i {
+color: #fff;
+font-size: 22px;
+transform: rotate(-6deg);
+}
+.copyright-area{
+background: #202020;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #c0c0c0;
+}
+.copyright-text p a{
+color: #a5cfbb;
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+.footer-menu li:hover a{
+color: #a5cfbb;
+}
+.footer-menu li a {
+font-size: 14px;
+color: #c0c0c0;
+}
+/* End of Footer */
 
 
 
@@ -522,7 +775,7 @@ header#head-info p {
 
 
 /* Media Queries */
-@media (max-width: 375px) {
+@media (min-width: 360px) {
   header#head-main {
     padding: 12px 20px;
   }
@@ -620,7 +873,7 @@ header#head-info p {
   }
 
   .button-media.active {
-      position: sticky;
+      position: fixed;
       z-index: 500;
       background: url("img/close.png");
       background-repeat: no-repeat;
@@ -646,5 +899,41 @@ header#head-info p {
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
+
+  .lodging .lodging-content {
+    margin-left: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 425px) and (min-width: 390px) {
+  #home .content-slider nav .controls label {
+    padding: 0 5em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #home .content-slider nav .controls label {
+    margin: 1em;
+    padding-top: 0.5em;
+    /* text-align: center; */
+    margin-top: 1em;
+    height: 4em;
+    font-size: 1em;
+    
+  }
+
+  #home .content-slider .slider .banner .banner-inner-wrapper h2{
+    padding-top: 5em;
+    font-size: 1.9em;
+  }
+
+  #home .content-slider .slider .banner .banner-inner-wrapper h1{
+    font-size: 4em;
+  }
+  
+}
+
+@media screen {
 
 }
