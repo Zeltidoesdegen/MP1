@@ -1041,7 +1041,7 @@ color: #c0c0c0;
   margin: 0 4rem}
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1480px) {
   .trial::before {
     top: -420px;
     top: calc(-420px + 5vw);
