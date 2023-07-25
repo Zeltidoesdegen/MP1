@@ -37,7 +37,7 @@ body h1 {
 
 #head-main .head-title {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 5em;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -57,7 +57,7 @@ body h1 {
   color: #fff;
   font-weight: 300;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 2.5em;
   /* If removed, might cause some errors since spacing when it comes to web responsiveness */
   margin-left: 30px;
   transition: 0.3s ease;
@@ -131,11 +131,11 @@ body h1 {
 }
 
 #home .content-slider .slider .banner .banner-inner-wrapper h2 {
-  padding-top: 3em;
+  padding-top: 5em;
   padding-bottom: 0.3em;
   font-family: 'Kaushan Script', cursive;
   font-weight: 400;
-  font-size: 2.5em;
+  font-size: 3.5em;
   text-transform: none;
 }
 
@@ -195,14 +195,14 @@ body h1 {
   position: relative;
   display: inline-block;
   width: 20%;
-  height: 3.1em;
+  height: 8em;
   overflow: hidden;
   margin: 0 1em;
   padding-top: 1em;
   text-align: left;
   text-transform: uppercase;
   font-family: Montserrat, sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   color: #dfe4dd;
   font-weight: 400;
   cursor: pointer;
@@ -775,7 +775,7 @@ color: #c0c0c0;
 
 
 /* Media Queries */
-@media (min-width: 360px) {
+@media (max-width: 375px) {
   header#head-main {
     padding: 12px 20px;
   }
@@ -906,7 +906,7 @@ color: #c0c0c0;
 
 }
 
-@media only screen and (max-width: 425px) and (min-width: 390px) {
+/* @media only screen and (max-width: 425px) {
   #home .content-slider nav .controls label {
     padding: 0 5em;
   }
@@ -917,23 +917,19 @@ color: #c0c0c0;
     margin: 1em;
     padding-top: 0.5em;
     /* text-align: center; */
-    margin-top: 1em;
+    /* margin-top: 1em;
     height: 4em;
-    font-size: 1em;
+    font-size: 1em; */
     
   }
 
-  #home .content-slider .slider .banner .banner-inner-wrapper h2{
+  /* #home .content-slider .slider .banner .banner-inner-wrapper h2{
     padding-top: 5em;
     font-size: 1.9em;
   }
 
   #home .content-slider .slider .banner .banner-inner-wrapper h1{
     font-size: 4em;
-  }
+  } */
   
-}
-
-@media screen {
-
-}
+} */
