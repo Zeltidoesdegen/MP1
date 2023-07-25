@@ -872,7 +872,7 @@ color: #c0c0c0;
   }
 
   .button-media.active {
-      position: fixed;
+      position: sticky;
       z-index: 500;
       background: url("img/close.png");
       background-repeat: no-repeat;
