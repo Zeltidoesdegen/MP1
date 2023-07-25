@@ -905,7 +905,7 @@ color: #c0c0c0;
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .trial::before {
     top: -420px;
     top: calc(-420px + 5vw);
