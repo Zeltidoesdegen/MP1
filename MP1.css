@@ -904,3 +904,11 @@ color: #c0c0c0;
   }
 
 }
+
+@media (min-width: 1440px) {
+  .trial::before {
+    top: -420px;
+    top: calc(-420px + 5vw);
+  }
+
+}
